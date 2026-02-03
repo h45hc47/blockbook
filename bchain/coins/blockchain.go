@@ -40,6 +40,7 @@ import (
 	"github.com/trezor/blockbook/bchain/coins/litecoin"
 	"github.com/trezor/blockbook/bchain/coins/monacoin"
 	"github.com/trezor/blockbook/bchain/coins/monad"
+	"github.com/h45hc47/blockbook/tree/monad/bchain/coins/monad"
 	"github.com/trezor/blockbook/bchain/coins/monetaryunit"
 	"github.com/trezor/blockbook/bchain/coins/myriad"
 	"github.com/trezor/blockbook/bchain/coins/namecoin"
