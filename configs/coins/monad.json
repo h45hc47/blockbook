@@ -1,0 +1,38 @@
+{
+    "coin": {
+        "name": "Monad",
+        "shortcut": "MON",
+        "label": "Monad",
+        "alias": "monad"
+    },
+    "ports": {
+        "backend_rpc": 8543,
+        "backend_message_queue": 0,
+        "backend_p2p": 38543,
+        "backend_http": 8643,
+        "blockbook_internal": 9543,
+        "blockbook_public": 9643
+    },
+    "ipc": {
+        "rpc_url_template": "ws://127.0.0.1:{{.Ports.BackendRPC}}",
+        "rpc_timeout": 25
+    },
+    "blockbook": {
+        "package_name": "blockbook-monad",
+        "system_user": "blockbook-monad",
+        "internal_binding_template": ":{{.Ports.BlockbookInternal}}",
+        "public_binding_template": ":{{.Ports.BlockbookPublic}}",
+        "explorer_url": "",
+        "additional_params": "",
+        "block_chain": {
+            "parse": true,
+            "mempool_workers": 8,
+            "mempool_sub_workers": 2,
+            "block_addresses_to_keep": 600
+        }
+    },
+    "meta": {
+        "package_maintainer": "h45hc47",
+        "package_maintainer_email": "h45hc47@autistici.org"
+    }
+}
