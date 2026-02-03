@@ -84,6 +84,8 @@ require (
 	gopkg.in/mgo.v2 v2.0.0-20190816093944-a6b53ec6cb22 // indirect
 )
 
+replace github.com/trezor/blockbook/bchain/coins/monad => ./bchain/coins/monad
+
 // replace github.com/martinboehm/btcutil => ../btcutil
 
 // replace github.com/martinboehm/btcd => ../btcd
